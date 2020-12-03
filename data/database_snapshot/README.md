@@ -11,7 +11,7 @@ from monty.serialization import loadfn
 data = loadfn("magnetic-orderings-database-snapshot.part1.json.gz")  # and the same for part 2
 ```
 
-This snapshot is split into parts simply due to git's large file limit. If loading the data with a different JSON parser, the `Structure` objects can be reconstructed in Python using pymatgen and `Structure.from_dict()`. Data analysis is usually easier if the snapshot is first loaded into a database that can handled JSON documents, like MongoDB.
+This snapshot is split into parts simply due to git's large file limit. If loading the data with a different JSON parser, the `Structure` objects can be reconstructed in Python using pymatgen and `Structure.from_dict()`. Data analysis is usually easier if the snapshot is first loaded into a database that can handle JSON documents, like MongoDB.
 
 If using any of this data please cite:
 
